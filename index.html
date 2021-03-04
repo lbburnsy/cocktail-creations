@@ -11,15 +11,26 @@ href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.mi
 integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" 
 crossorigin="anonymous"/>
 
-<!-- Compressed JavaScript -->
-<script 
-src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" 
-integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+
 
 <!--css-->
 <link rel="stylesheet" type="text/css" href="./assets/css/index.css"/>
 </head>
 <body>
+
+
+
+    <div class="row">
+        <div class="columns small-12 large-expand" id="toggle">One</div>
+        <div class="columns small-12 large-expand"id="toggle1">Two</div>
+        <div class="columns small-12 large-expand"id="toggle2">Three</div>
+      </div>
+
+      <div class="slider" data-slider data-initial-start="50" data-end="200">
+        <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input type="hidden">
+      </div>
 
 <!--JQuery-->
 <script 
@@ -27,7 +38,13 @@ src ="https://code.jquery.com/jquery-3.5.1.js"
 integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
 crossorigin="anonymous"></script>
 
-<script src="./assets/index.js"></script>
+<!-- Compressed JavaScript -->
+<script 
+src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" 
+integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+
+<!-- Vanilla Javasacript-->
+<script src="./assets/js/index.js"></script>
 
 
 
