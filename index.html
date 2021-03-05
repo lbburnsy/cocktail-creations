@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results</title>
 
-<!-- Compressed CSS -->
-<link rel="stylesheet" 
-href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" 
-integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" 
-crossorigin="anonymous"/>
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous" />
 
 
 
-<!--css-->
-<link rel="stylesheet" type="text/css" href="./assets/css/index.css"/>
+  <!--css-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
 </head>
+
 <body>
+  <header class="header-area">
+    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+    <section class="top-bar-section">
+      <div class="top-bar navbarcolor" id="responsive-menu">
+        <div class="top-bar-left ">
+          <ul class="menu ">
+            <li class="menu-text ">Cocktail Creation</li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="has-submenu">
+              <a href="#0">Vodka</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#0">Rum</a></li>
+                <li><a href="#0">Tequila</a></li>
+                <li><a href="#0">Bourbon</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </section>
+    </div>
+  </header>
+  <div class="card">
+    <img src="assets/images/cocktail-background.jpg">
+  </div>
 
 
 
-    <div class="row">
-        <div class="columns small-12 large-expand" id="toggle">One</div>
-        <div class="columns small-12 large-expand"id="toggle1">Two</div>
-        <div class="columns small-12 large-expand"id="toggle2">Three</div>
-      </div>
 
-      <div class="slider" data-slider data-initial-start="50" data-end="200">
-        <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
-        <span class="slider-fill" data-slider-fill></span>
-        <input type="hidden">
-      </div>
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
 
-<!--JQuery-->
-<script 
-src ="https://code.jquery.com/jquery-3.5.1.js" 
-integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
-crossorigin="anonymous"></script>
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 
-<!-- Compressed JavaScript -->
-<script 
-src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" 
-integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-
-<!-- Vanilla Javasacript-->
-<script src="./assets/js/index.js"></script>
+  <!-- Vanilla Javasacript-->
+  <script src="./assets/js/index.js"></script>
 
 
 
-    
+
 </body>
+
 </html>

@@ -1,3 +1,29 @@
-#toggle{
-    background-color: brown;
+
+
+.menu .menu-text {
+    padding: .7rem 1rem;
+    font-weight: 700;
+    line-height: 1;
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Niconne', cursive;
+    font-weight: 700;
+}
+.top-bar {
+    background: red;
+    height: 58px;
+    line-height: 58px;
+    margin-bottom: 0;
+}
+ 
+.top-bar-section ul {
+    background: red;
+    text-transform: uppercase;
+}
+ 
+.top-bar-section li a:not(.button) {
+    background: none;
+    line-height: 58px;
+    padding: 0 27px;
 }
