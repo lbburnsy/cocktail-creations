@@ -1,7 +1,26 @@
-#menu-text{
-    color: yellow;
+header {
+    background-color: red;
+    padding: 10px;
 }
 
-##{
-    color:turquoise;
+#backbar-image {
+    width: 100%;
+    height: 500px;
+}
+
+#drinks {
+    padding: 10px;
+    margin-bottom: 25px;
+  line-height: 50px;
+  height: 150px;
+  color: black;
+  text-align: center;
+}
+
+#centered{
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: 50%;
+
 }
