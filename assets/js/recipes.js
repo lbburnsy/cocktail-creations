@@ -24,8 +24,9 @@ function writeName(drink) {
 function writeIngredients(drink) {
   for (let i = 1; i < 16; i++) {
     let ingredient = "strIngredient" + i.toString();
-    let searchString = `drink.${ingredient}`;
-    console.log(drink.strIngredient1);
+    if (drink[ingredient] !== null) {
+        console.log("good ingredient")
+    }
   }
 }
 

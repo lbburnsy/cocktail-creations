@@ -2,3 +2,17 @@ header {
     background-color: red;
     padding: 10px;
 }
+
+body {
+    /* background: url(../images/bar-wall.jpg) no-repeat center center fixed;
+    background-size: cover; */
+}
+
+.jumbotron-text {
+    height: 30vh;
+    background-color: blue;
+}
+
+.results-container {
+    background-color: orange;
+}
