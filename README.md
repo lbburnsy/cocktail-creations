@@ -9,6 +9,16 @@ Then on another click it brings the user back to the main page to choose a new l
 
 This app gives the user some different, and possibly new, ideas on drinks they can make. Instead of their standard Jack and Coke, the user may find a drink they didnt even know about and that could become their new favorite drink
 
-Getting it totally responsive was a challenge for a little while, but eventually got it figured out. 
+Getting it totally responsive was a challenge for a little while, but eventually got it figured out.
+
 In the future we would like to link a Spotify or some other music App so that this app could be the party starter destination!
-{Link to deployed page}
+
+{The landing page the user first sees}(assets\images\Landing Page.png)
+{The Second page where the drinks based on the alcohol choice appear}(assets\images\Results page.png)
+{The Recipe page where the user gets the ingredients and directions for selected drink}(assets\images\Recipe Page.png)
+
+
+https://github.com/lbburnsy/cocktail-creations/
+
+
+Luc B, Priyanka, and Donald Gehring are all contributers to this project
