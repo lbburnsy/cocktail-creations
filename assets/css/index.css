@@ -1,56 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    font-family: 'Anton', sans-serif!important;
+}
+
+header {
+    background-color: red;
+    padding: 10px;
+}
+
 body {
     background: url(../images/bar-wall.jpg) no-repeat center center fixed;
     background-size: cover;
+    max-height: 100vw;
 }
 
-h1 {
-    padding: .7rem 1rem;
-    font-weight: 700;
-    line-height: 1;
-    font-size: 2rem;
-    font-family: 'Niconne', cursive;
-    text-align: center;
-    background: red;
-    
-    margin-bottom: 0;
+main {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-/* .top-bar {
-   
-    height: 58px;
-    line-height: 58px;
-    margin-bottom: 0;
-    background: none;
-    padding: 0;
-} */
-/* .menu {
-    background-color:none;
+
+main h2 {
     color: white;
 }
-.cocktail-list ul {
-    background: red;
-    text-transform: uppercase;
-    
-    width: 50%;
-}
 
-.menu li a:not(.button) {
-    background: none;
-    line-height: 58px;
-    padding: 0 27px;
-    color: white;
-    font-size: 20px;
-} */
-
-section{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-    background-position: 50%;
-    background-size: cover;
-    overflow: hidden;
-    /* background-repeat: no-repeat; */
-    background-image: url('../images/4.jpeg');
+.button {
+    padding: 30px!important;
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 10px;
 }
