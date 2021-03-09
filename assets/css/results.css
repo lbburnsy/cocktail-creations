@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    font-family: 'Anton', sans-serif!important;
+}
+
 header {
     background-color: red;
     padding: 10px;
@@ -17,6 +23,6 @@ header {
     color: white;
 }
 
-.cell {
-    width: 25%;
+button {
+    border-radius: 5px!important;
 }
