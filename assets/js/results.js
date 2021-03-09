@@ -39,6 +39,7 @@ function displayDrinkCards(array) {
                 </div>
             </div>
         </div>`;
+    
     cardContainer.append(html);
   }
 }
