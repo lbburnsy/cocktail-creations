@@ -1,13 +1,17 @@
 // Initialize foundation
 $(document).foundation();
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const alcohol = urlParams.get('alcohol');
+
 // Query the DOM
 let drinkName = $("#jumbotron-text");
 let ingredientList = $("#ingredient-list");
 let directionsList = $("#directions-list");
 
 $(document).ready(() => {
-  let link = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=15346`;
+  let link = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${alcohol}`;
   fetch(link)
     .then((response) => response.json())
     .then((data) => {

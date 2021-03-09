@@ -40,7 +40,7 @@ function displayDrinkCards(array) {
                 </div>
                 <img src="${array[i].strDrinkThumb}"/>
                 <div class="card-section">
-                    <button class="button" value=${array[i].idDrink}>Get Recipe</button>
+                    <button class="button" id="btn" value=${array[i].idDrink}>Get Recipe</button>
                 </div>
             </div>
         </div>`;
@@ -48,3 +48,9 @@ function displayDrinkCards(array) {
     cardContainer.append(html);
   }
 }
+
+document.addEventListener('click', function(e) {
+  if (e.target && e.target.id == 'btn') {
+    window.location = `./recipes.html?alcohol=${e.target.value}`;
+  }
+})
