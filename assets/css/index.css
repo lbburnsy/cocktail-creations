@@ -4,11 +4,6 @@
     font-family: 'Anton', sans-serif!important;
 }
 
-header {
-    background-color: red;
-    padding: 10px;
-}
-
 body {
     background: url(../images/bar-wall.jpg) no-repeat center center fixed;
     background-size: cover;
