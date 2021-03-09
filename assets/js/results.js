@@ -1,19 +1,24 @@
 // Initialize foundation
 $(document).foundation();
 
+// Sets the search value by pulling from the lin k
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const alcohol = urlParams.get('alcohol');
+
 // Query the DOM
 
 let jumbotronText = $("#jumbotron-text");
 let cardContainer = $("#card-container");
 
 $(document).ready(() => {
-  let link = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=vodka`;
+  jumbotronText.text(alcohol);
+  let link = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${alcohol}`;
   fetch(link)
     .then((response) => response.json())
     .then((data) => {
       let drinksArray = data.drinks;
       shuffleArray(drinksArray);
-      console.log(drinksArray[0]);
       displayDrinkCards(drinksArray);
     });
 });
@@ -35,7 +40,7 @@ function displayDrinkCards(array) {
                 </div>
                 <img src="${array[i].strDrinkThumb}"/>
                 <div class="card-section">
-                    <button class="button" value=${array[i].idDrink}>Get Recipe</button>
+                    <button class="button" id="btn" value=${array[i].idDrink}>Get Recipe</button>
                 </div>
             </div>
         </div>`;
@@ -43,3 +48,9 @@ function displayDrinkCards(array) {
     cardContainer.append(html);
   }
 }
+
+document.addEventListener('click', function(e) {
+  if (e.target && e.target.id == 'btn') {
+    window.location = `./recipes.html?alcohol=${e.target.value}`;
+  }
+})
