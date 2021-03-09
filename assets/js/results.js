@@ -11,7 +11,7 @@ let jumbotronText = $("#jumbotron-text");
 let cardContainer = $("#card-container");
 
 $(document).ready(() => {
-  jumbotronText.text(alcohol);
+  jumbotronText.text(alcohol.toUpperCase());
   let link = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${alcohol}`;
   fetch(link)
     .then((response) => response.json())
@@ -37,16 +37,16 @@ function shuffleArray(array) {
 }
 
 function displayDrinkCards(array) {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 8; i++) {
     let html = `
-        <div class="cell small-3">
+        <div class="cell large-3 medium-6">
             <div class="card">
-                <div class="card-divider">
+                <div class="card-divider align-center">
                     <h4>${array[i].strDrink}</h4>
                 </div>
                 <img src="${array[i].strDrinkThumb}"/>
-                <div class="card-section">
-                    <button class="button" id="btn" value=${array[i].idDrink}>Get Recipe</button>
+                <div class="card-section text-center">
+                    <button class="button align-self-center" id="btn" value=${array[i].idDrink}>Get Recipe</button>
                 </div>
             </div>
         </div>`;
@@ -57,7 +57,7 @@ function displayDrinkCards(array) {
 
 function setLocalStorage(array) {
   let newArray = [];
-  for (let i=0; i < 10; i++) {
+  for (let i=0; i < 8; i++) {
     newArray.push(array[i]);
   }
   localStorage.setItem("drinks", JSON.stringify(newArray));
