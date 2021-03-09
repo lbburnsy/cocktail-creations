@@ -2,7 +2,7 @@
 $(document).foundation();
 
 // Query the DOM
-let drinkName = $("#drink-name");
+let drinkName = $("#jumbotron-text");
 let ingredientList = $("#ingredient-list");
 let directionsList = $("#directions-list");
 
