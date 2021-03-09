@@ -7,7 +7,6 @@ const urlParams = new URLSearchParams(queryString);
 const alcohol = urlParams.get('alcohol');
 
 // Query the DOM
-
 let jumbotronText = $("#jumbotron-text");
 let cardContainer = $("#card-container");
 
@@ -19,7 +18,14 @@ $(document).ready(() => {
     .then((data) => {
       let drinksArray = data.drinks;
       shuffleArray(drinksArray);
-      displayDrinkCards(drinksArray);
+      // displayDrinkCards(drinksArray);
+      let storedArray = JSON.parse(localStorage.getItem("drinks"));
+      if (storedArray == undefined) {
+        setLocalStorage(drinksArray);
+        displayDrinkCards(drinksArray);
+      } else {
+        displayDrinkCards(storedArray);
+      };
     });
 });
 
@@ -47,6 +53,14 @@ function displayDrinkCards(array) {
     
     cardContainer.append(html);
   }
+}
+
+function setLocalStorage(array) {
+  let newArray = [];
+  for (let i=0; i < 10; i++) {
+    newArray.push(array[i]);
+  }
+  localStorage.setItem("drinks", JSON.stringify(newArray));
 }
 
 document.addEventListener('click', function(e) {
