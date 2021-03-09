@@ -1,19 +1,24 @@
 // Initialize foundation
 $(document).foundation();
 
+// Sets the search value by pulling from the lin k
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const alcohol = urlParams.get('alcohol');
+
 // Query the DOM
 
 let jumbotronText = $("#jumbotron-text");
 let cardContainer = $("#card-container");
 
 $(document).ready(() => {
-  let link = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=vodka`;
+  jumbotronText.text(alcohol);
+  let link = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${alcohol}`;
   fetch(link)
     .then((response) => response.json())
     .then((data) => {
       let drinksArray = data.drinks;
       shuffleArray(drinksArray);
-      console.log(drinksArray[0]);
       displayDrinkCards(drinksArray);
     });
 });
