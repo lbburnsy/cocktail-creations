@@ -3,16 +3,24 @@ header {
     padding: 10px;
 }
 
-body {
-    /* background: url(../images/bar-wall.jpg) no-repeat center center fixed;
-    background-size: cover; */
+.jumbotron {
+    height: 60vh;
+    background: url(../images/bar-wall.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin-bottom: 20px;
 }
 
-.jumbotron-text {
-    height: 30vh;
-    background-color: blue;
+.jumbotron h2 {
+    font-size: 70px;
+    width: auto;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    color: white;
 }
 
 .results-container {
     background-color: orange;
+}
+
+.cell {
+    width: 25%;
 }
