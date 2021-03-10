@@ -1,44 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
+/* Sets font for entire page */
 * {
-    font-family: 'Anton', sans-serif!important;
+  font-family: "Anton", sans-serif !important;
 }
 
 header {
-    background-color: #780000;
-    padding: 10px;
-    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
-                 10px 20px 5px rgba(0,0,0,0.05),
-                 -10px 20px 5px rgba(0,0,0,0.05);
-    color: #fffffa;
+  background-color: #780000;
+  padding: 10px;
+  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+    10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+  color: #fffffa;
 }
 
 body {
-    background: url(../images/cocktail-liquor.jpg) no-repeat center center fixed;
-    background-size: cover;
-    max-height: 100vw;
+  background: url(../images/cocktail-liquor.jpg) no-repeat center center fixed;
+  background-size: cover;
+  max-height: 100vw;
 }
 
+/* Sets styling for the main container with buttons */
 main {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 main section h2 {
-    color: #fffffa;
-    font-size: 40px;
-    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
-    margin-top: 20px;
+  color: #fffffa;
+  font-size: 40px;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
 }
 
 .button {
-    padding: 20px 0px!important;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-size: 30px;
-    border-radius: 10px;
-    width: 75%;
-    background-color: #003049;
+  padding: 20px 0px !important;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  width: 75%;
+  background-color: #003049;
 }
