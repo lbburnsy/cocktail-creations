@@ -46,7 +46,7 @@ function displayDrinkCards(array) {
                 </div>
                 <img src="${array[i].strDrinkThumb}"/>
                 <div class="card-section text-center">
-                    <button class="button align-self-center" id="btn" value=${array[i].idDrink}>Get Recipe</button>
+                    <button class="hollow button align-self-center" id="btn" value=${array[i].idDrink}>Get Recipe</button>
                 </div>
             </div>
         </div>`;
