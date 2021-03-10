@@ -14,10 +14,10 @@ header {
 }
 
 .jumbotron {
-    height: 60vh;
+    height: 50vh;
     background: url(../images/bar-wall.jpg) no-repeat center center fixed;
     background-size: cover;
-    
+
 }
 
 .jumbotron h2 {

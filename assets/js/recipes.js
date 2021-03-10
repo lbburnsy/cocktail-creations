@@ -9,6 +9,7 @@ const alcohol = urlParams.get('alcohol');
 let drinkName = $("#jumbotron-text");
 let ingredientList = $("#ingredient-list");
 let directionsList = $("#directions-list");
+let thumbnail = $("#thumbnail")
 
 $(document).ready(() => {
   let link = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${alcohol}`;
@@ -19,6 +20,7 @@ $(document).ready(() => {
       writeName(drink);
       writeIngredients(drink);
       writeDirections(drink);
+      writeThumbnail(drink);
     });
 });
 
@@ -42,4 +44,10 @@ function writeDirections(drink) {
     let output = $("<p>");
     output.text(drink.strInstructions);
     directionsList.append(output);
+}
+
+function writeThumbnail(drink) {
+  let output = $("<img>");
+  output.attr("src", drink.strDrinkThumb);
+  thumbnail.append(output);
 }
