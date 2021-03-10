@@ -32,10 +32,12 @@ function writeIngredients(drink) {
   for (let i = 1; i < 16; i++) {
     let measure = "strMeasure" + i.toString();
     let ingredient = "strIngredient" + i.toString();
-    if (drink[ingredient] !== null) {
-        let output = $("<p>");
+    let output = $("<p>");
+    if (drink[ingredient] !== null && drink[measure] !== null) {
         output.text(`${drink[measure]} ${drink[ingredient]}`);
         ingredientList.append(output);
+    } else {
+      output.text(`${drink[ingredient]}`);
     }
   }
 }
