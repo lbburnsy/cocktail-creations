@@ -65,6 +65,6 @@ function setLocalStorage(array) {
 
 document.addEventListener('click', function(e) {
   if (e.target && e.target.id == 'btn') {
-    window.location = `./recipes.html?alcohol=${e.target.value}`;
+    window.location = `./recipes.html?id=${e.target.value}&alcohol=${alcohol}`;
   }
 })
