@@ -29,8 +29,11 @@ In the future we would like to link in a mapping utility to supply on demand dir
 ![Results Page](./assets/images/results-page.png)
 ![Recipe Page](./assets/images/recipe-page.png)
 
-## Depolyed Link
+## Deployed Link
 https://lbburnsy.github.io/cocktail-creations
+
+## Repository Link
+https://github.com/lbburnsy/cocktail-creations
 
 ### Contributors
 Luc B, Priyanka, and Donald G are all contributers to this project
