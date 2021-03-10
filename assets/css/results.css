@@ -5,24 +5,48 @@
 }
 
 header {
-    background-color: red;
+    background-color: #780000;
     padding: 10px;
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+    color: #fffffa;
 }
 
 .jumbotron {
     height: 60vh;
     background: url(../images/bar-wall.jpg) no-repeat center center fixed;
     background-size: cover;
-    margin-bottom: 20px;
 }
 
 .jumbotron h2 {
     font-size: 70px;
     width: auto;
     text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
-    color: white;
+    color: #fffffa;
 }
 
 button {
     border-radius: 5px!important;
+    border: 1px solid black!important;
+    font-size: 20px!important;
+    color: black!important;
+}
+
+button:hover {
+    background-color: black!important;
+    color: #fffffa!important;
+}
+
+.results-container {
+    padding-top: 20px;
+    background-color: #780000;
+}
+
+.card-divider, .card-section {
+    background-color: #FDF0D5;
+}
+
+.cell {
+    border: 1px solid #780000!important;
 }
