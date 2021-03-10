@@ -17,6 +17,7 @@ header {
     height: 60vh;
     background: url(../images/bar-wall.jpg) no-repeat center center fixed;
     background-size: cover;
+    
 }
 
 .jumbotron h2 {
@@ -45,8 +46,4 @@ button:hover {
 
 .card-divider, .card-section {
     background-color: #FDF0D5;
-}
-
-.cell {
-    border: 1px solid #780000!important;
 }
